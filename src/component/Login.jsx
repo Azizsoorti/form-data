@@ -40,12 +40,19 @@ function Login() {
                 <input onChange={(e) => { setName(e.target.value) }} style={{ display: "block", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Username' />
                 <input onChange={(e) => { setEmail(e.target.value) }} style={{ display: "block", margin: "30px 0", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Email' />
                 <input onChange={(e) => { setPassword(e.target.value) }} style={{ display: "block", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Password' />
-                <button
+                <button type='Submit'
                     onMouseOver={handalMouseOver}
                     onMouseOut={handalMouseOut}
-                    type='Submit' style={{ backgroundColor: mover ? "black" : "skyblue", borderRadius: "16px", width: "70%", borderColor: "skyblue", color: "white", margin: "70px 15%" }}>Submit</button>
+                    style={{ backgroundColor: mover ? "black" : " #6a11cb", borderRadius: "16px", width: "70%", borderColor: "skyblue", color: "white", margin: "70px 15%" }}>Submit</button>
             </form>
         </div>
+
+
+
+
+
+
+
     )
 }
 
