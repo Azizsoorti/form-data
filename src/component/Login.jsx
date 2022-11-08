@@ -10,17 +10,21 @@ function Login() {
 
     const submitForm = (e) => {
         e.preventDefault();
-        var newEntry = {
-            name: name,
-            email: email,
-            password: password
-        }
 
-        if (name && email, password) { setFill("Form has been submited"); console.log(newEntry); }
+        let Name = name;
+        let Email = email;
+        let Password = password;
+
+        if (name && email, password) { setFill("Form has been submited"); alert(`Name: ${Name},   Email: ${Email},   Password: ${Password}`); }
+        setName("");
+        setEmail("");
+        setPassword("");
+
     }
     const [mover, setMover] = useState(false)
     function handalMouseOver() {
         setMover(true)
+
     }
     function handalMouseOut() {
         setMover(false)
@@ -37,9 +41,9 @@ function Login() {
             <p style={{ marginLeft: "8px", color: "red" }}>  {fill}</p>
             <h1 style={{ marginBottom: "20px", textAlign: "center" }} >Login Form</h1>
             <form onSubmit={submitForm}>
-         <input  onChange={(e) => { setName(e.target.value) }} style={{ display: "block", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Username' />
-                <input onChange={(e) => { setEmail(e.target.value) }} style={{ display: "block", margin: "30px 0", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Email' />
-                <input onChange={(e) => { setPassword(e.target.value) }} style={{ display: "block", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Password' />
+                <input value={name} onChange={(e) => { setName(e.target.value) }} style={{ display: "block", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Username' />
+                <input value={email} onChange={(e) => { setEmail(e.target.value) }} style={{ display: "block", margin: "30px 0", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Email' />
+                <input value={password} onChange={(e) => { setPassword(e.target.value) }} style={{ display: "block", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Password' />
                 <button type='Submit'
                     onMouseOver={handalMouseOver}
                     onMouseOut={handalMouseOut}
