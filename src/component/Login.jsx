@@ -41,8 +41,8 @@ function Login() {
             <p style={{ marginLeft: "8px", color: "red" }}>  {fill}</p>
             <h1 style={{ marginBottom: "20px", textAlign: "center" }} >Login Form</h1>
             <form onSubmit={submitForm}>
-                <input value={name} onChange={(e) => { setName(e.target.value) }} style={{ display: "block", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Username' />
-                <input value={email} onChange={(e) => { setEmail(e.target.value) }} style={{ display: "block", margin: "30px 0", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Email' />
+                <input value={name} onChange={(e) => { setName(e.target.value) }} style={{ display: "block", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='First Name' />
+                <input value={email} onChange={(e) => { setEmail(e.target.value) }} style={{ display: "block", margin: "30px 0", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Last Name' />
                 <input value={password} onChange={(e) => { setPassword(e.target.value) }} style={{ display: "block", width: "100%", borderRadius: "16px", borderColor: "white" }} type="text" placeholder='Password' />
                 <button type='Submit'
                     onMouseOver={handalMouseOver}
