@@ -47,7 +47,7 @@ function Login() {
                 <button type='Submit'
                     onMouseOver={handalMouseOver}
                     onMouseOut={handalMouseOut}
-                    style={{ backgroundColor: mover ? "black" : " #6a11cb", borderRadius: "16px", width: "70%", borderColor: "skyblue", color: "white", margin: "70px 15%" }}>Submit</button>
+                    style={{ backgroundColor: mover ? "black" : " #6a11cb", borderRadius: "16px", width: "70%", borderColor: "skyblue", color: "white", margin: "70px 15%" }}>Greet Me</button>
             </form>
         </div>
 
