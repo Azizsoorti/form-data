@@ -15,7 +15,7 @@ function Login() {
         let Email = email;
         let Password = password;
 
-        if (name && email, password) { setFill("Form has been submited"); alert(`Name: ${Name},   Email: ${Email},   Password: ${Password}`); }
+        if (name && email, password) { setFill("Form has been submited"); alert(`First Name: ${Name},   Last Name: ${Email},   Password: ${Password}`); }
         setName("");
         setEmail("");
         setPassword("");
